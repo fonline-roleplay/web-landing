@@ -1,0 +1,66 @@
+sections:
+  features:
+    - title: Everchanging world
+      image: img/13.png
+      description: |
+        Player choices define the landscape. GMs offer a plot but how to play it is up to you.
+        Request non-player faction help? Overthrow the mayor and declare war to NCR?
+        Ban the carrying of weapons and turn the city into a utopia?
+        It's all up to you, but don't forget: wasteland is harsh and every choice or inaction taken might fire back twice as hard.
+    - title: Custom locations
+      image: img/11.png
+      description: |
+        The game is long-term session-based, each one takes place in a certain place of the post nuclear North American
+        continent. Unlike in classic orignal, there aint no global map, instead a set of numerous locations are tied up
+        side by side -- yet still you can visit most well known original universe cities but -- as part of GM-curated event.
+        Mapping team works hard to make the locations look good and to keep it up to onging story -- after all, anything at
+        the game map can be build and demolished -- the whole landscape might change due to actions of players.
+    - title: Custom assets
+      image: img/0.jpg
+      description: |
+        Except for skins, items and objects of the original F1/2 games we've acquired permission to use a huge load of game
+        assets from other FOnline projects and F1/2 modifications, as well as added a lot of own creations including items,
+        game world objects, sounds, music and much more.
+    - title: Realtime combat & permadeath
+      image: img/2.png
+      description: |
+        Since it is nearly impossible to provide fluid simultaneous combat-and-peaceful activities experience on large
+        multiplayer maps, combat is realtime-based. However, we tweaked it as much as possible to be both fun for those
+        who seeks the thrill of fight and not too bothersome for peace-seekers. Yet, beware, once you die, the game is over.
+        And nothing kills better than self-confidence. The combat differs from the original game and other FOnline projects.
+    - title: Interactivity
+      description: |
+        Aside ability to change the game world with our mapping team support, there are a lot of things you can do on yoruself.
+        Buy and craft furniture, move it around your home, plant stuff, burn stuff and just listen to some old world music on
+        newly acquired jukebox while integrating walkie-talkie into your combat armor at grandpa workbench. May items like the
+        vote boxes, vending machines, light and power controls are interactive -- try to figure them all out on your own.
+    - title: Crafting
+      image: img/17.png
+      description: |
+        We have a broad crafting system incorporating both classic "fixboy" mechanics and new specialized furniture craft
+        systems like workbenches, tables for growing mushrooms, melting machines and moonshine stills. Pay players for bringing
+        up resources, pay fellow crafters for providing you specialized components and craft your food, armor, weapons, furniture,
+        ammo and consumables the way you want. Beside, since it is a roleplaying project, we highly adore you going further and
+        actually roleplaying the crafting process -- the more realistic the more chances you have GM issue you a result that's not
+        even in the craftlists. Though. With high reward comes the great risk and who knows what's going to happen in a case of failure.
+    - title: Logging, mining, scavenging
+      description: |
+        Most game world trees can be chopped for wood. Given you have the necessary equipment you can visit the local cave system to see
+        if you can mine some rare materials or just old good iron ore for further melting. Or, in the end just stroll around the ruins to
+        find some God forgotten junk pile to try digging out something useful with your multitool.
+    - title: Farming and fishing
+      description: |
+        Given you have fertile land and the seeds, you might try to become a succesfull farmer and grow up you food and fortune. Or, if
+        you don't want to bother with hiring guards or hunt for <del>slaves</del> to work on your plantations, just buy or make a fishing
+        rod and chill out on the nearest shore. Just beware, don't step into water and be ready to run if a mirelurk comes to visit.
+    - title: Hunting and skinning
+      image: img/12.png
+      description: |
+        If nether farming or fishing is your vocation, you can always resort to the old ways and go hunt some unlucky animal to feed on.
+        Though, beware, hunting is second to none business when it comes to dying miserably because of your own neglectance. Only junkies
+        hunt with the bare hands - use hunting nets, traps and throwers to outsmart your pray and cheat your own death.
+    - title: Hunger, thirst and more
+      description: |
+        Whether you are a passing savage or mayor of the city, you are still a mere human. We have non-obtrusive hunger and thirst mechanics
+        to ensure your character is not feeding on a thin air. You can get drunk, irradiated or forever injured, run into some serious
+        really incident and GMs will make it sure to make you remember it for long.

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="with-effects" style="background:#131313;opacity:1;color:#5f5">
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="icon" type="image/png" href="/img/favicon.webp" />
+    <meta name="theme-color" content="black">
+    <title>The Long Journey | FOnline Roleplay</title>
+    <meta name="description" content="FOnline Roleplaying Community Project">
+    <meta name="keywords" content="fonline,roleplay,rpg,online,heavy rp,heavy roleplay,immersion,mod">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+    <script>var exports = {};</script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.cjs.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/splide.min.css" type="text/css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let splide = new Splide('#features');
+            splide.mount();
+        });
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Share Tech Mono';
+        }
+        .features {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1024px;
+        }
+        .features > div {
+            width: 100%;
+            margin-bottom: .3%;
+            display: flex;
+            flex-direction: row;
+        }
+        .features > div > div {
+            border: 1px solid green;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .features > div:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .features-item-title {
+            max-width: 20%;
+        }
+        #features .splide__slide {
+            border: 1px solid green;
+            padding: 1rem 5rem;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    {# <section style="background: url(img/background.jpg) center/cover; height: 60vh">
+        <img src="img/logo_lossy.webp">
+        <div style="display: none">
+            <p><strong>FOnline: The Long Journey</strong> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
+
+            <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+
+            <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing
+                and nobody with the price of broken penny for the head of yours.</p>
+
+            <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.
+                The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+        </div>
+    </section>#}
+    <section>
+        <div id="features" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for feature in sections.features %}
+                    <li class="splide__slide" data-splide-interval="4" style="background: url({{ feature.image }}) center/cover">
+                        <div class="features__info">
+                            <div class="features__title">{{ feature.title }}</div>
+                            <div class="features__description">{{ feature.description }}</div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
