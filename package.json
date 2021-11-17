@@ -1,17 +1,18 @@
 {
-  "name": "tlj-landing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "build.mjs",
-  "scripts": {
-    "build": "node build.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "twing": "^5.1.0"
-  },
-  "dependencies": {
-    "yaml": "2.0.0-9"
-  }
+    "name": "tlj-landing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build.mjs",
+    "scripts": {
+        "build": "node build.js && browserify assets/app.js -o assets/bundle.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "twing": "^5.1.0"
+    },
+    "dependencies": {
+        "@splidejs/splide": "^3.5.0",
+        "yaml": "2.0.0-9"
+    }
 }
