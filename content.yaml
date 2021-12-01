@@ -1,30 +1,66 @@
+headers:
+  features: "Features"
+  links: "Links"
+
 sections:
+  links:
+    # Открываются в новом окне, выводятся под features
+    # title: '...' - заголовок
+    # link: '...' - урл для открытия в новом окне
+    - title: Join us at Discord
+      url: https://google.com
+
+    - title: Support at Patreon
+      url: https://google.com
+
   features:
+   # Выводятся на боковой панели в слайдере, доступные поля: 
+   # title: '...' - заголовок и надпись на кнопке
+   # show_title: false - скрыть надпись на кнопке
+   # youtube_video: 8Tmsou4ByZ8 - добавить видео (если без description - видео будет видно сразу, иначе только после клика по слайду)
+   # description: '...' - текст слайда (можно использовать HTML)
+   # image: '...' - фоновое изображение
+   # icon: '...' - картинка-иконка на кнопке имею
+    - title: "The Long Journey"
+      show_title: false
+      youtube_video: 8Tmsou4ByZ8
+      description: |
+        <p style='text-align:center'><img src='/assets/ui/full-logo.png'></p>
+        <p><u>FOnline: The Long Journey</u> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+        <p>The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+
     - title: Everchanging world
-      image: img/13.png
+      image: /assets/backgrounds/background.jpg
       icon: /assets/icons/journal.png
       description: |
         Player choices define the landscape. GMs offer a plot but how to play it is up to you.
         Request non-player faction help? Overthrow the mayor and declare war to NCR?
         Ban the carrying of weapons and turn the city into a utopia?
         It's all up to you, but don't forget: wasteland is harsh and every choice or inaction taken might fire back twice as hard.
+
     - title: Custom locations
+      image: /assets/backgrounds/encounter.jpg
       icon: /assets/icons/highwayman.png
-      image: img/11.png
       description: |
         The game is long-term session-based, each one takes place in a certain place of the post nuclear North American
-        continent. Unlike in classic orignal, there aint no global map, instead a set of numerous locations are tied up
+        continent. Unlike in classic original, there ain't no global map, instead a set of numerous locations are tied up
         side by side -- yet still you can visit most well known original universe cities but -- as part of GM-curated event.
-        Mapping team works hard to make the locations look good and to keep it up to onging story -- after all, anything at
+        Mapping team works hard to make the locations look good and to keep it up to ongoing story -- after all, anything at
         the game map can be build and demolished -- the whole landscape might change due to actions of players.
+
     - title: Custom assets
       icon: /assets/icons/bag.png
-      image: img/0.jpg
+      image: /assets/backgrounds/dump.jpg
       description: |
         Except for skins, items and objects of the original F1/2 games we've acquired permission to use a huge load of game
         assets from other FOnline projects and F1/2 modifications, as well as added a lot of own creations including items,
         game world objects, sounds, music and much more.
-    - title: Realtime combat & permadeath
+
+    - title: Real time combat
+      youtube_video: 9ADfldugKls # VTEK-1: Combat tips
       icon: /assets/icons/shells.png
       image: img/2.png
       description: |
@@ -32,13 +68,16 @@ sections:
         multiplayer maps, combat is realtime-based. However, we tweaked it as much as possible to be both fun for those
         who seeks the thrill of fight and not too bothersome for peace-seekers. Yet, beware, once you die, the game is over.
         And nothing kills better than self-confidence. The combat differs from the original game and other FOnline projects.
+
     - title: Interactivity
       icon: /assets/icons/pipboy.png
+      image: /assets/backgrounds/port.jpg
       description: |
-        Aside ability to change the game world with our mapping team support, there are a lot of things you can do on yoruself.
+        Aside ability to change the game world with our mapping team support, there are a lot of things you can do on yourself.
         Buy and craft furniture, move it around your home, plant stuff, burn stuff and just listen to some old world music on
         newly acquired jukebox while integrating walkie-talkie into your combat armor at grandpa workbench. May items like the
         vote boxes, vending machines, light and power controls are interactive -- try to figure them all out on your own.
+
     - title: Crafting
       icon: /assets/icons/plans.png
       image: img/17.png
@@ -49,27 +88,47 @@ sections:
         ammo and consumables the way you want. Beside, since it is a roleplaying project, we highly adore you going further and
         actually roleplaying the crafting process -- the more realistic the more chances you have GM issue you a result that's not
         even in the craftlists. Though. With high reward comes the great risk and who knows what's going to happen in a case of failure.
-    - title: Logging, mining, scavenging
+
+    - title: Mining
       icon: /assets/icons/pickaxe.png
+      image: /assets/backgrounds/mining.jpg
+      youtube_video: n5-Go-eHsGg # VTEK mining
       description: |
-        Most game world trees can be chopped for wood. Given you have the necessary equipment you can visit the local cave system to see
+        [TODO] Most game world trees can be chopped for wood. Given you have the necessary equipment you can visit the local cave system to see
         if you can mine some rare materials or just old good iron ore for further melting. Or, in the end just stroll around the ruins to
         find some God forgotten junk pile to try digging out something useful with your multitool.
+
+    - title: Scavenging
+      youtube_video: 7kKd3bvaN78 # VTEK Scavenging
+      description: |
+        [TODO] Most game world trees can be chopped for wood. Given you have the necessary equipment you can visit the local cave system to see
+        if you can mine some rare materials or just old good iron ore for further melting. Or, in the end just stroll around the ruins to
+        find some God forgotten junk pile to try digging out something useful with your multitool.
+
+    - title: Logging
+      description: |
+        [TODO] Most game world trees can be chopped for wood. Given you have the necessary equipment you can visit the local cave system to see
+        if you can mine some rare materials or just old good iron ore for further melting. Or, in the end just stroll around the ruins to
+        find some God forgotten junk pile to try digging out something useful with your multitool.
+
     - title: Farming and fishing
       icon: /assets/icons/radcvet.png
       description: |
-        Given you have fertile land and the seeds, you might try to become a succesfull farmer and grow up you food and fortune. Or, if
+        Given you have fertile land and the seeds, you might try to become a successful farmer and grow up you food and fortune. Or, if
         you don't want to bother with hiring guards or hunt for <del>slaves</del> to work on your plantations, just buy or make a fishing
         rod and chill out on the nearest shore. Just beware, don't step into water and be ready to run if a mirelurk comes to visit.
+
     - title: Hunting and skinning
       icon: /assets/icons/capcan.png
-      image: img/12.png
+      image: /assets/backgrounds/hunt.jpg
       description: |
         If nether farming or fishing is your vocation, you can always resort to the old ways and go hunt some unlucky animal to feed on.
         Though, beware, hunting is second to none business when it comes to dying miserably because of your own neglectance. Only junkies
         hunt with the bare hands - use hunting nets, traps and throwers to outsmart your pray and cheat your own death.
+
     - title: Hunger, thirst and more
       icon: /assets/icons/meat.png
+      image: /assets/backgrounds/campfire.jpg
       description: |
         Whether you are a passing savage or mayor of the city, you are still a mere human. We have non-obtrusive hunger and thirst mechanics
         to ensure your character is not feeding on a thin air. You can get drunk, irradiated or forever injured, run into some serious

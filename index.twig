@@ -12,8 +12,8 @@
 </head>
 <body>
     <section class="tool">
-        <div style="display:flex;flex-direction:row">
-            {#<div style="width:30%;padding: 1em;">
+        {# }<div style="display:flex;flex-direction:row">
+           <div style="width:30%;padding: 1em;">
                     <p><strong>FOnline: The Long Journey</strong> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
 
                     <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
@@ -23,21 +23,50 @@
 
                     <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.
                         The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
-                </div>#}
+                </div>
             <div class="fo-display fo-display--video js-play"  data-url="https://www.youtube.com/embed/8Tmsou4ByZ8?controls=0&autoplay=1" data-target="#trailer" style="width:100%">
                 <iframe id="trailer" style="visibility:hidden" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <hr>
+        <hr>#}
         <div id="features" class="splide">
+            <div class='splide__before-pagination'>
+                <div class='splide__logo'></div>
+                <div class='splide__header'>{{headers.features}}</div>
+            </div>
+            <div class='splide__after-pagination'>
+                <div class='splide__header'>{{headers.links}}</div>
+                    <div class='splide__button-grid'>
+                    {% for link in sections.links %}
+                    <a href="{{link.url}}" class='btn btn--with-dot' target='_blank'>
+                        <div class='btn--transparent'>
+                            <div class='btn__header'>
+                                <div class="title">{{link.title}}</div>{#<img class="icon" src="/assets/icons/journal.png">#}
+                            </div>
+                        </div>
+                    </a>
+                    {% endfor %}
+                    </div>
+            </div>
             <div class="splide__track fo-display">
                 <ul class="splide__list">
                     {% for feature in sections.features %}
-                    <li class="splide__slide" data-title="{{feature.title}}" data-icon="{{feature.icon}}" style="background: url({{ feature.image }}) center/cover">
-                        <div class="features__info">
-                            <div class="features__title">{{ feature.title }}</div>
-                            <div class="features__description">{{ feature.description }}</div>
+                    <li 
+                        class="splide__slide {% if feature.youtube_video %}splide__slide--video{% endif %} {% if  feature.description %}splide__slide--description{% endif %}" 
+                         {% if feature.youtube_video %} data-url="https://www.youtube.com/embed/{{feature.youtube_video}}?controls=0{% if  feature.description %}&amp;autoplay=1{% endif %}" {% endif %}
+                        data-title="{{feature.title}}" 
+                        data-icon="{{feature.icon}}"
+                        style="background: url({{ feature.image }})"
+                    >
+                        {% if  feature.description %}
+                        <div class="splide__screen">
+                            {% if feature.show_title != false %}
+                            <div class="splide__screen__title">{{ feature.title }}</div>
+                            {% endif %}
+                            <div class="splide__screen__description">{{ feature.description|raw }}</div>
                         </div>
+                        {% endif %}
+                        <iframe {% if  feature.description %}style="visibility:hidden"{% else %}src='https://www.youtube.com/embed/{{feature.youtube_video}}?controls=0'{% endif %} width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
                     {% endfor %}
                 </ul>
