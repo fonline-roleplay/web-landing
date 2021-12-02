@@ -1,0 +1,71 @@
+{# HTML BLOCK #}
+{% macro HTMLElement(data) %}
+<li 
+    class="splide__slide --with-scrollbar --html"
+    data-title="{{data.title}}" 
+    data-icon="{{data.icon}}"
+    style="background: url({{ data.image }})"
+>
+    <!-- HTMLElement -->
+    {{data.value | raw }}
+    <!-- /HTMLElement -->
+</li>
+{% endmacro %}
+
+{# VIDEO BLOCK #}
+{% macro VideoElement(data) %}
+<li 
+    class="splide__slide --video"
+    data-title="{{data.title}}" 
+    data-icon="{{data.icon}}"
+    style="background: url({{ data.image }})"
+>
+    <!-- VideoElement -->
+    <iframe 
+        width="560" 
+        height="315" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        src="https://www.youtube.com/embed/{{data.value}}"
+    ></iframe>
+    <!-- /VideoElement -->
+</li>
+{% endmacro %}
+
+
+{# IMAGE BLOCK #}
+{% macro ImageElement(data) %}
+<li 
+    class="splide__slide --image"
+    data-title="{{data.title}}" 
+    data-icon="{{data.icon}}"
+    style="background: url({{ data.image }})"
+>
+    <!-- ImageElement -->
+    <img src="{{data.value}}" />
+    <!-- /ImageElement -->
+</li>
+{% endmacro %}
+
+{# SLIDER #}
+{% macro SliderElement(data, options = {}) %}
+    <!-- SliderElement -->
+    <div id="{{options.id}}" class="splide --slider {{options.splide_class}}">
+            <div class="splide__track {{options.track_class}}">
+                <ul class="splide__list">
+                <!-- SliderElement:value -->
+                {% for element in data.value %}
+                {% if element.type == 'html' %}{{ _self.HTMLElement(element) }}
+                {% elseif element.type == 'image' %}{{ _self.ImageElement(element) }} 
+                {% elseif element.type == 'video' %}{{ _self.VideoElement(element) }} 
+                {% elseif element.type == 'slider' %}{{ _self.SliderElement(element) }}
+                {% else %}<li class="splide__slide">[ERROR: Unsupported content type {{element.type}}]</li>
+                {% endif %}
+                {% endfor %}
+                <!-- /SliderElement:value -->
+            </ul>
+        </div>
+    </div>
+    <!-- /SliderElement -->
+{% endmacro %}

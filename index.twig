@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="with-effects">
 <head>
-
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="icon" type="image/png" href="/img/favicon.webp" />
     <meta name="theme-color" content="black">
@@ -9,26 +8,12 @@
     <meta name="description" content="FOnline Roleplaying Community Project">
     <meta name="keywords" content="fonline,roleplay,rpg,online,heavy rp,heavy roleplay,immersion,mod">
     <link rel="stylesheet" href="/assets/app.css" type="text/css">
+    {% import "elements.twig" as elements %}
 </head>
 <body>
     <section class="tool">
-        {# }<div style="display:flex;flex-direction:row">
-           <div style="width:30%;padding: 1em;">
-                    <p><strong>FOnline: The Long Journey</strong> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
-
-                    <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
-
-                    <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing
-                        and nobody with the price of broken penny for the head of yours.</p>
-
-                    <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.
-                        The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
-                </div>
-            <div class="fo-display fo-display--video js-play"  data-url="https://www.youtube.com/embed/8Tmsou4ByZ8?controls=0&autoplay=1" data-target="#trailer" style="width:100%">
-                <iframe id="trailer" style="visibility:hidden" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <hr>#}
+        {{ elements.SliderElement(layout, {id: 'features', 'track_class': 'splide__track--main', 'splide__class': 'splide--main'}) }}
+        <!--
         <div id="features" class="splide">
             <div class='splide__before-pagination'>
                 <div class='splide__logo'></div>
@@ -72,6 +57,7 @@
                 </ul>
             </div>
         </div>
+            -->
     </section>
     <script src="/assets/bundle.js"></script>
 </body>

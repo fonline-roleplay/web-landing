@@ -1,3 +1,66 @@
+layout:
+  type: slider
+  value: 
+    - title: "The Long Journey"
+      type: html
+      value: |
+        <p style='text-align:center'><img src='/assets/ui/full-logo.png'></p>
+        <p><u>FOnline: The Long Journey</u> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+        <p>The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+        <p>The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+        <p>The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+        <p>The place you have to fight for and the biggest enemy won't be the mutated fauna or the desert, but the very people around you.</p>
+    
+    - title: "Content"
+      type: slider
+      value:
+      - type: image
+        value: https://cdn.discordapp.com/attachments/583716493867614228/892035086889938964/d38f6843492c1ef3ebb726cafcef785e_20210927160348443.jpg
+      - type: image
+        value: https://cdn.discordapp.com/attachments/525033717157199885/877605199294906368/IMG-PHOTO-ART-1514701754.jpg
+      - type: image
+        value: https://cdn.discordapp.com/attachments/583716493867614228/869659884126355546/Untitled_000002.jpg
+
+    - title: "FOO"
+      type: image
+      value: https://cdn.discordapp.com/attachments/583716493867614228/892035086889938964/d38f6843492c1ef3ebb726cafcef785e_20210927160348443.jpg
+
+    - title: "Test"
+      type: html
+      value: |
+        <p><u>FOnline: The Long Journey</u> is a Fаllоut 1/2 based online RPG, set in Fallout atmosphere, following the original parts canon and ideas.</p>
+        <p>The game focuses on roleplay and survival, replicating the absolute ruthlessness of the Wastelands and the anarchic post nuclear world.</p>
+        <p>Forget about being a "Chosen One" or some kind of superhuman being able to change the world around. Here you are nothing and nobody with the price of broken penny for the head of yours.</p>
+        <p>Your character is fragile, your aim is to survive and thrive, your dream is to find your place in the unforgiving world.</p>
+    
+    - title: "bar"
+      type: video
+      value: 8Tmsou4ByZ8
+
+
+
+#    - title: VTEK (Guides)
+#      type: slider
+#      value:
+#      - type: video
+#        value: 9ADfldugKls
+#      - type: video
+#        value: n5-Go-eHsGg
+#      - type: video 
+#        value: 7kKd3bvaN78
+
 headers:
   features: "Features"
   links: "Links"
@@ -13,6 +76,10 @@ sections:
     - title: Support at Patreon
       url: https://google.com
 
+  
+
+
+
   features:
    # Выводятся на боковой панели в слайдере, доступные поля: 
    # title: '...' - заголовок и надпись на кнопке
@@ -22,7 +89,6 @@ sections:
    # image: '...' - фоновое изображение
    # icon: '...' - картинка-иконка на кнопке имею
     - title: "The Long Journey"
-      show_title: false
       youtube_video: 8Tmsou4ByZ8
       description: |
         <p style='text-align:center'><img src='/assets/ui/full-logo.png'></p>
