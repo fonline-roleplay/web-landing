@@ -8,10 +8,10 @@ sections:
     # title: '...' - заголовок
     # link: '...' - урл для открытия в новом окне
     - title: Join us at Discord
-      url: https://google.com
+      url: https://discord.gg/FX4HMVGgfh
 
     - title: Support at Patreon
-      url: https://google.com
+      url: https://www.patreon.com/user?u=18265146&fan_landing=true
 
   features:
    # Выводятся на боковой панели в слайдере, доступные поля: 
