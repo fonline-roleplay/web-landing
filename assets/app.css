@@ -127,7 +127,7 @@ body {
 
 .splide {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row /*-reverse*/;
 }
 
 .splide__arrows {
