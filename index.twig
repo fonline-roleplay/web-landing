@@ -41,7 +41,7 @@
                     <a href="{{link.url}}" class='btn btn--with-dot' target='_blank'>
                         <div class='btn--transparent'>
                             <div class='btn__header'>
-                                <div class="title">{{link.title}}</div>{#<img class="icon" src="/assets/icons/journal.png">#}
+                                <div class="title">{{link.title|raw}}</div>{#<img class="icon" src="/assets/icons/journal.png">#}
                             </div>
                         </div>
                     </a>
@@ -61,7 +61,7 @@
                         {% if  feature.description %}
                         <div class="splide__screen">
                             {% if feature.show_title != false %}
-                            <div class="splide__screen__title">{{ feature.title }}</div>
+                            <div class="splide__screen__title">{{ feature.title|raw }}</div>
                             {% endif %}
                             <div class="splide__screen__description">{{ feature.description|raw }}</div>
                         </div>
