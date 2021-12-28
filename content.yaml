@@ -7,7 +7,7 @@ sections:
     # Открываются в новом окне, выводятся под features
     # title: '...' - заголовок
     # link: '...' - урл для открытия в новом окне
-    - title: Join us at Discord
+    - title: '<span style="font-size:1.2rem;color:#fff">To start playing - join us at Discord</span>'
       url: https://discord.gg/FX4HMVGgfh
 
     - title: Support at Patreon
